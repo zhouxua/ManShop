@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhouxuan.manshop.MainActivity">
+  <!--fragment容器-->
+   <FrameLayout
+       android:id="@+id/content"
+       android:layout_width="match_parent"
+       android:layout_above="@+id/rg"
+       android:layout_height="match_parent"></FrameLayout>
+
+    <!--radioGroup的四个按钮-->
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_home"
+            android:drawableTop="@drawable/drawable_home"
+            android:text="@string/app_home"
+            style="@style/rg_style"/>
+        <RadioButton
+            android:id="@+id/radio_sort"
+            android:drawableTop="@drawable/drawable_sort"
+            android:text="@string/app_sort"
+            style="@style/rg_style"/>
+        <RadioButton
+            android:id="@+id/radio_cart"
+            android:drawableTop="@drawable/drawable_cart"
+            android:text="@string/app_cart"
+            style="@style/rg_style" />
+        <RadioButton
+            android:id="@+id/radio_mine"
+            android:text="@string/app_mine"
+            android:drawableTop="@drawable/drawable_mine"
+            android:textColor="@drawable/radio_color"
+            style="@style/rg_style"/>
+    </RadioGroup>
+</RelativeLayout>
